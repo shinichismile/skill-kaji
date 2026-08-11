@@ -7,12 +7,12 @@
 | お使いのAI | 型 | スキルの置き場所（自分用） | 入れたあとにすること | 名前を呼ぶ書き方 |
 |---|---|---|---|---|
 | Claude Code | (A) | `~/.claude/skills/〈名前〉/` | 何もしなくてOK（その場で反映）。skillsフォルダを新しく作った初回だけアプリを開き直す | `/〈名前〉` |
-| claude.ai（ブラウザ・デスクトップのチャット） | (C) | 設定 → Features から**zipをアップロード**（Pro／Max／Team／Enterprise のプランで、コード実行・ファイル作成の機能がONであること） | 新しいチャットを開く | — |
-| ChatGPT（デスクトップ） | (C) | サイドバーの Skills → Create → Upload（フォルダをzipにして） | すぐ使えます | `@〈名前〉` |
-| OpenAI Codex（CLI・IDE） | (A) | `~/.agents/skills/〈名前〉/` | 新しいセッションを開く | `$〈名前〉` |
-| Antigravity CLI（Gemini CLIの後継） | (A) | `~/.agents/skills/〈名前〉/` | `/skills reload` | 名前を挙げる |
-| Cursor | (B) | `~/.cursor/skills/〈名前〉/`（`~/.claude/skills/` もそのまま読みます） | すぐ使えます | `/〈名前〉` |
-| VS Code の GitHub Copilot | (B) | `~/.copilot/skills/〈名前〉/`（`~/.claude/skills/` もそのまま読みます） | すぐ使えます | `/〈名前〉` |
+| claude.ai（ブラウザ・デスクトップのチャット） | (C) | サイドメニューの **Customize（カスタマイズ）→ Skills** →「Create skill」→「Upload a skill」で**zipをアップロード**（**Freeプランでも可**。前提＝コード実行・ファイル作成がON：Free/Pro/Maxは Settings → Capabilities、Team/Enterpriseは組織設定でオーナーが有効化） | 新しいチャットで試す | — |
+| ChatGPT（ブラウザ・デスクトップ） | (C) | サイドバーの **Plugins → Skillsタブ → Create → Upload from your computer**（フォルダ直アップ or 単一フォルダ入りzip。50MB・500ファイル上限）。**対象は Business／Enterprise／Healthcare／Edu のみ。個人の Free・Go・Plus・Pro は対象外（2026-08時点）** | すぐ使えます | `@〈名前〉` |
+| OpenAI Codex（CLI・IDE） | (A) | `~/.agents/skills/〈名前〉/` | 変更は自動検出。出てこなければCodexを再起動 | `$〈名前〉` |
+| Antigravity CLI（Gemini CLIの後継） | (A) | グローバル＝`~/.gemini/antigravity-cli/skills/〈名前〉/`、プロジェクト内＝`.agents/skills/〈名前〉/` | `/skills` で読み込みを確認 | 名前を挙げる |
+| Cursor | (B) | `~/.cursor/skills/〈名前〉/`（`~/.claude/skills/`・`~/.codex/skills/` もそのまま読みます） | 起動時に自動で読み込み。出なければ開き直す | `/〈名前〉` |
+| VS Code の GitHub Copilot | (B) | `~/.copilot/skills/〈名前〉/`（`~/.claude/skills/`・`~/.agents/skills/` もそのまま読みます） | すぐ使えます | `/〈名前〉` |
 
 **「型」の(A)(B)(C)** は、SKILL.md 冒頭の「環境の3分類」に対応しています（(A)ターミナル型／(B)エディタ型／(C)チャット型）。
 
@@ -20,7 +20,7 @@
 
 1. **ここに無いAIをお使いの場合**：そのAIの公式ドキュメントで「skills」を探してください。対応ツールの公式一覧は agentskills.io の Client Showcase にあります
 2. **この表は2026年8月時点のものです。3か月をめどに見直してください。** この分野は動きが速く、置き場所や呼び方は変わります
-3. **スキル一覧を確認するコマンド**（重複チェックや、入ったかの確認に使う）：Claude Code は `/skills`、Antigravity CLI は `/skills list`、GitHub Copilot は コマンドパレットの `Chat: Configure Skills`。一覧の手段が無いAIでは、利用者に画面の一覧を貼ってもらう
+3. **スキル一覧を確認するコマンド**（重複チェックや、入ったかの確認に使う）：Claude Code は `/skills`、Antigravity CLI は `/skills`、GitHub Copilot は チャットで `/skills`（またはコマンドパレットの `Chat: Open Customizations`）。一覧の手段が無いAIでは、利用者に画面の一覧を貼ってもらう
 
 ## 隠しフォルダ（`~/.claude` など）の開き方
 

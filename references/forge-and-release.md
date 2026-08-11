@@ -336,8 +336,8 @@
 3. 置いた場所を開いて **`SKILL.md` が直接見えれば成功**です
 
 **B. 画面からアップロードする**（claude.ai・ChatGPT）
-- claude.ai：設定 → Features から zip をアップロード（Pro以上のプランで、コード実行・ファイル作成の機能がONであること）
-- ChatGPT：サイドバーの Skills → Create → Upload
+- claude.ai：サイドメニューの Customize（カスタマイズ）→ Skills →「Create skill」→「Upload a skill」で zip をアップロード（Freeプランでも可。コード実行・ファイル作成の機能がONであること）
+- ChatGPT：サイドバーの Plugins → Skillsタブ → Create → Upload from your computer（2026年8月時点で Business／Enterprise／Healthcare／Edu 向け。個人の Free・Go・Plus・Pro は対象外）
 
 ## 最初の一言
 新しいチャットで「〈頼み方の例〉」と話しかけてください。

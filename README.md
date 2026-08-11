@@ -62,9 +62,10 @@ AIがダウンロードして、正しい置き場所に入れてくれます。
 
 **フォルダをzipにして、画面から入れます。**
 
-- **claude.ai**：設定 → Features から**zipをアップロード**
-  （Pro／Max／Team／Enterprise のプランで、コード実行・ファイル作成の機能がONになっている必要があります）
-- **ChatGPT**：サイドバーの Skills → Create → Upload
+- **claude.ai**：サイドメニューの **Customize（カスタマイズ）→ Skills** →「Create skill」→「Upload a skill」で**zipをアップロード**
+  （**Freeプランでも使えます**。前提＝コード実行・ファイル作成の機能がONであること。Free/Pro/Maxは Settings → Capabilities で確認）
+- **ChatGPT**：サイドバーの **Plugins → Skillsタブ → Create → Upload from your computer**
+  （**2026年8月時点で Business／Enterprise／Healthcare／Edu 向けの機能です。個人の Free・Go・Plus・Pro ではまだ使えません**）
 
 詳しい場所は `references/tool-map.md`（読み替え表）にまとめてあります。
 
@@ -141,7 +142,7 @@ AIがダウンロードして、正しい置き場所に入れてくれます。
 
 スキルの形式（SKILL.md）はオープンな規格で、**2026年8月時点で46のツール**が対応をうたっています（公式一覧＝agentskills.io の Client Showcase）。**数字と顔ぶれは動きが速いので、3か月をめどに公式一覧で見直してください。**
 
-**Claude Code を基準に書いた手順書です。** Codex・Antigravity CLI・Cursor・GitHub Copilot でも同じ手順で作れます（入れる場所だけ違います。読み替え表をご覧ください）。claude.ai・ChatGPT のチャット画面でも作れますが、zipのアップロード方式になり、記録の保存と混入チェックは手作業になります（claude.ai は Pro 以上のプランが必要です）。
+**Claude Code を基準に書いた手順書です。** Codex・Antigravity CLI・Cursor・GitHub Copilot でも同じ手順で作れます（入れる場所だけ違います。読み替え表をご覧ください）。claude.ai・ChatGPT のチャット画面でも作れますが、zipのアップロード方式になり、記録の保存と混入チェックは手作業になります（claude.ai は Free プランでも使えます。ChatGPT の Skills は 2026年8月時点で Business／Enterprise／Healthcare／Edu 向けで、個人の Plus・Pro は対象外です）。
 
 **どのAIでも、動作の確認はご自身の環境で行ってください。**
 
